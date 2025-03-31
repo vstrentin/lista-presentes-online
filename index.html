@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Passeios - Casamento</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Lista de Passeios - Casamento</h1>
+  <div id="passeios-lista"></div>
+
+  <!-- Modal para exibir o Pix -->
+  <div id="pix-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close">×</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-value"></p>
+      <p><strong>Chave Pix:</strong> <span id="modal-pix-key"></span></p>
+      <p><strong>QR Code:</strong></p>
+      <div id="modal-qr-code"></div>
+    </div>
+  </div>
+
+  <!-- Firebase SDK (Modular) -->
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
+    import { getDatabase } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js';
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDJn5FasSRlGCMcPTvsiqb4KdfjzwG5aQo",
+      authDomain: "lista-presentes-online-7e5fc.firebaseapp.com",
+      databaseURL: "https://lista-presentes-online-7e5fc-default-rtdb.firebaseio.com",
+      projectId: "lista-presentes-online-7e5fc",
+      storageBucket: "lista-presentes-online-7e5fc.firebasestorage.app",
+      messagingSenderId: "363392714019",
+      appId: "1:363392714019:web:6cfdfca5c4956d5d71f896"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    console.log("Firebase inicializado com sucesso:", app);
+
+    const database = getDatabase(app);
+    window.database = database;
+  </script>
+
+  <!-- Biblioteca qrcode-generator -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
