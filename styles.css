@@ -62,7 +62,7 @@ button:disabled {
 
 /* Estiliza a imagem na lista de passeios */
 .passeio-imagem {
-  width: 100%;
+  width: 50%;
   max-width: 200px;
   height: auto;
   border-radius: 8px;
@@ -112,16 +112,16 @@ button:disabled {
 }
 
 /* Ajusta o layout do modal para acomodar a descrição e a imagem */
-.modal-content {
-  padding: 20px;
+/* .modal-content {
+  padding: 10px;
   max-width: 500px;
   margin: 50px auto;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   max-height: 80vh; /* Limita a altura do modal a 80% da altura da tela */
-  overflow-y: auto; /* Permite rolagem vertical dentro do modal */
-}
+  /* overflow-y: auto; Permite rolagem vertical dentro do modal */
+/* } */ */
 
 /* Estiliza o botão de confirmação no modal */
 .confirmar-pagamento {
@@ -189,4 +189,117 @@ button:disabled {
   color: #616161; /* Cinza escuro */
   background-color: #f5f5f5; /* Cinza claro como fundo */
   border: 1px solid #9e9e9e; /* Borda cinza */
+}
+
+.passeio {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.passeio-imagem {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.status {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.status-disponivel {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-pago {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.pago {
+  background-color: #e9ecef;
+  opacity: 0.7;
+}
+
+/* Ajuste para os botões */
+.pagar-passeio {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-top: 5px; /* Espaçamento entre o status e o botão */
+  border-radius: 3px;
+  cursor: pointer;
+  display: block; /* Faz o botão ocupar a largura total do container */
+  width: fit-content; /* Ajusta a largura ao conteúdo do botão */
+}
+
+.pagar-passeio:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Estilização do modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.modal-imagem {
+  max-width: 50%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.confirmar-pagamento {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.confirmar-pagamento:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
 }
