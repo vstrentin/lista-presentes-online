@@ -15,11 +15,7 @@
     <p>Com carinho,</p>
     <p>Liziane e Rondon</p>
   </div>
-
   <div id="passeios-lista"></div>
-
-  <!-- Modal para exibir o Pix -->
-<!-- Modal para exibir o Pix -->
 <!-- Modal para exibir o Pix -->
   <div id="pix-modal" class="modal">
     <div class="modal-content">
@@ -49,17 +45,14 @@
       messagingSenderId: "363392714019",
       appId: "1:363392714019:web:6cfdfca5c4956d5d71f896"
     };
-
     const app = initializeApp(firebaseConfig);
     console.log("Firebase inicializado com sucesso:", app);
-
     const database = getDatabase(app);
     window.database = database;
   </script>
 
   <!-- Biblioteca qrcode-generator -->
   <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
-
   <script type="module" src="script.js"></script>
 </body>
 </html>

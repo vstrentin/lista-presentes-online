@@ -4,7 +4,7 @@ import { database, ref, onValue, set } from './firebase-init.js';
 // Verifica se as funções do Firebase estão disponíveis
 if (!ref || !onValue || !set || !database) {
   console.error("Erro: Funções do Firebase não estão disponíveis. Verifique se o Firebase foi inicializado corretamente.");
-  document.getElementById('passeios-lista').innerHTML = '<p>Erro ao carregar o Firebase. Verifique sua conexão com a internet e tente novamente.</p>';
+  document.getElementById('passeios-lista').innerHTML = '<p>Erro ao carregar os passeios. Verifique sua conexão com a internet e tente novamente.</p>';
 } else {
   const passeiosRef = ref(database, 'passeios');
   const lista = document.getElementById('passeios-lista');
@@ -19,8 +19,6 @@ if (!ref || !onValue || !set || !database) {
   const modalValue = document.getElementById('modal-value');
   const modalPixKey = document.getElementById('modal-pix-key');
   const modalQrCode = document.getElementById('modal-qr-code');
-  const modalDescription = document.getElementById('modal-description');
-  const modalImage = document.getElementById('modal-image');
   const closeModal = document.getElementById('close-modal');
   const confirmarPagamentoBtn = document.getElementById('confirmar-pagamento');
 
@@ -53,7 +51,6 @@ if (!ref || !onValue || !set || !database) {
   }
 
   // Nomes formatados dos passeios
-// Nomes formatados dos passeios
   const nomesFormatados = {
     bigben: "Big Ben",
     londoneye: "London Eye",
@@ -67,7 +64,6 @@ if (!ref || !onValue || !set || !database) {
     heinekenexp: "Heineken Experience"
   };
 
-  // Descrições dos passeios
 // Descrições dos passeios
 const descricoesPasseios = {
   bigben: "Big Ben é o nome do sino mais famoso do mundo e da torre que o abriga, no Palácio de Westminster, em Londres. O Big Ben é um grande sino instalado na torre noroeste sede do Parlamento Britânico, localizado em Londres, no Reino Unido.",
@@ -96,7 +92,6 @@ const imagensPasseios = {
   heinekenexp: "https://cdn.thatch.co/cdn-cgi/image/width=3840,format=webp/images/104109/6ga2u9.png"
 };
 
-  // Carrega os passeios do Firebase
 // Carrega os passeios do Firebase
 onValue(passeiosRef, (snapshot) => {
   console.log("Dados recebidos do Firebase:", snapshot.val());
@@ -194,7 +189,6 @@ onValue(passeiosRef, (snapshot) => {
   lista.innerHTML = '<p>Erro ao carregar os passeios. Verifique sua conexão com a internet e tente novamente.</p>';
 });
 
-  // Função para selecionar o passeio e exibir o modal
 // Função para selecionar o passeio e exibir o modal
 function selecionarPasseio(id, pessoa) {
   const passeioRef = ref(database, `passeios/${id}`);
