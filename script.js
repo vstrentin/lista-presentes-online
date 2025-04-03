@@ -35,7 +35,13 @@ if (!ref || !onValue || !set || !database) {
     passeio7: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406170.005802BR5913Liziane Lodea6007ERECHIM62230519palaciodekensington630484C3", // Palácio de Kensington
     passeio8: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406180.005802BR5913Liziane Lodea6007ERECHIM62170513casaannefrank6304A572", // Casa de Anne Frank
     passeio9: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406198.005802BR5913Liziane Lodea6007ERECHIM62160512museuvangogh6304CB22", // Museu Van Gogh
-    passeio10: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406175.005802BR5913Liziane Lodea6007ERECHIM62120508heineken6304C1B1" // Heineken Experience
+    passeio10: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406175.005802BR5913Liziane Lodea6007ERECHIM62120508heineken6304C1B1", // Heineken Experience
+    passeio11: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406265.005802BR5913Liziane Lodea6007Erechim62220518grandplacebruxelas63046F3E",// Grand Place de Bruxelas
+    passeio12: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406370.005802BR5913Liziane Lodea6007Erechim62150511torreeiffel6304D882",// Torre Eiffel
+    passeio13: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406170.005802BR5913Liziane Lodea6007Erechim62180514parquebruxelas6304035D",// Parque de Bruxelas
+    passeio14: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406192.005802BR5913Liziane Lodea6007Erechim62170513museudolouvre63046A2D",// Museu do Louvre
+    passeio15: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406151.005802BR5913Liziane Lodea6007Erechim62220518palaciodeversalhes630400B6",// Palácio de Versalhes
+    passeio16: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406122.005802BR5913Liziane Lodea6007Erechim62110507riosena63047175",// Rio Sena
   };
 
   // Gera os QR Codes para todos os passeios
@@ -64,8 +70,14 @@ if (!ref || !onValue || !set || !database) {
     palaciokensington: "Palácio de Kensington",
     casaannefrank: "Casa de Anne Frank",
     museuvangogh: "Museu Van Gogh",
-    heinekenexp: "Heineken Experience"
-  };
+    heinekenexp: "Heineken Experience",
+    grandplacebruxelas: "Grand Place de Bruxelas",
+    torreeiffel: "Torre Eiffel",
+    parquebruxelas: "Parque de Bruxelas",
+    louvre: "Museu do Louvre",
+    palacioversalhes: "Palácio de Versalhes",
+    riosena: "Rio Sena",
+    };
 
   // Descrições dos passeios
 // Descrições dos passeios
@@ -79,7 +91,13 @@ const descricoesPasseios = {
   palaciokensington: "O Palácio de Kensington é uma residência real situada em Kensington Gardens, no Royal Borough de Kensington e Chelsea, em Londres, Inglaterra. Tem sido utilizado pela Família Real Britânica desde o século XVII.",
   casaannefrank: "A Casa de Anne Frank é um museu biográfico localizado na cidade de Amesterdã, capital dos Países Baixos.",
   museuvangogh: "O Museu Van Gogh é um museu de arte localizado no município de Amsterdã, na província de Holanda do Norte nos Países Baixos. O museu é responsável pela preservação, conservação e difusão da obra do pintor holandês Vincent van Gogh.",
-  heinekenexp: "Heineken Experience - Tour interativo pela história da grande empresa cervejeira em uma antiga fábrica com degustação no final."
+  heinekenexp: "Heineken Experience - Tour interativo pela história da grande empresa cervejeira em uma antiga fábrica com degustação no final.",
+  grandplacebruxelas: "A Grand-Place de Bruxelas é a praça central de Bruxelas. Nela ficam a Câmara Municipal e a Casa do Rei. Alguns autores, entre os quais Victor Hugo, consideram-na a mais bela praça do mundo. Passeio com guia local.",
+  torreeiffel: "A Torre Eiffel é uma torre treliçada de ferro forjado no Champ de Mars, em Paris, França. Tem o nome do engenheiro Gustave Eiffel, cuja empresa projetou e construiu a torre de 1887 a 1889. Passeio com degustação. ",
+  parquebruxelas: "Também conhecido como Parque Real, o Parque de Bruxelas é o Parque de Bruxelas! Antigo refúgio de caça da realeza, é para lá que vão muitos dos habitantes quando querem relaxar e espairecer. Nos finais de semana fica lotado, pois muitos o procuram para praticar esportes, descansar, conversar e beber cerveja. Passeio com piquenique. ",
+  louvre: "Louvre ou Museu do Louvre é o maior museu de arte do mundo e um monumento histórico em Paris, França. Um marco central da cidade, está localizado na margem direita do rio Sena, no 1º arrondissement da cidade.",
+  palacioversalhes: "Palácio de Versalhes é um castelo real localizado na cidade de Versalhes, uma aldeia rural à época de sua construção, mas atualmente um subúrbio de Paris.",
+  riosena: "O Rio Sena corta o coração da cidade de Paris e passa em meio a alguns dos mais populares pontos turísticos da capital francesa, entre eles a Torre Eiffel, o Museu do Louvre, o Museu d'Orsay e a Catedral de Notre-Dame",
 };
 
 // URLs das imagens dos passeios
@@ -93,7 +111,13 @@ const imagensPasseios = {
   palaciokensington: "https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_3:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/london/604?_a=BAVAZGDX0",
   casaannefrank: "https://dicasdeamsterda.com.br/wp-content/uploads/sites/6/2016/04/annef-e1572036128309.jpg",
   museuvangogh: "https://images.adsttc.com/media/images/55e6/f619/e58e/ce03/1300/0374/large_jpg/PORTADA_06_VanGoghMuseum_EntranceBuilding_HansvanHeeswijkArchitects_photo_RonaldTilleman.jpg?1441199623",
-  heinekenexp: "https://cdn.thatch.co/cdn-cgi/image/width=3840,format=webp/images/104109/6ga2u9.png"
+  heinekenexp: "https://cdn.thatch.co/cdn-cgi/image/width=3840,format=webp/images/104109/6ga2u9.png",
+  grandplacebruxelas: "https://viajantesemfim.com.br/wp-content/uploads/2019/12/76647936_2581328741986880_620154867649871872_o.jpg",
+  torreeiffel: "https://cdn-imgix.headout.com/media/images/c90f7eb7a5825e6f5e57a5a62d05399c-25058-BestofParis-EiffelTower-Cruise-Louvre-002.jpg?auto=format&w=1051.2&h=540&q=90&fit=fit",
+  parquebruxelas: "https://dicaseuropa.com.br/wp-content/uploads/2014/01/parque-cinquentenario-bruxelas.jpg",
+  louvre: "https://www.simplesmenteparis.com/wp-content/uploads/2019/04/louvre-museum-1200x675.jpg",
+  palacioversalhes: "https://images.adsttc.com/media/images/6176/f430/f91c/81be/2200/000c/medium_jpg/jeremy-bezanger-pb-xtneJAAk-unsplash.jpg?1635185691",
+  riosena: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Pont_au_Change_and_Palais_de_justice%2C_Paris_20_April_2021_001.jpg/480px-Pont_au_Change_and_Palais_de_justice%2C_Paris_20_April_2021_001.jpg",
 };
 
   // Carrega os passeios do Firebase
