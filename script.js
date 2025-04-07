@@ -26,22 +26,21 @@ if (!ref || !onValue || !set || !database) {
 
   // Payloads Pix para todos os passeios
   const payloadsPasseios = {
-    passeio1: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406210.005802BR5913Liziane Lodea6007ERECHIM62100506BigBen6304B909", // Big Ben
-    passeio2: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406220.005802BR5913Liziane Lodea6007ERECHIM62130509londoneye63040B2E", // London Eye
-    passeio3: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406150.005802BR5913Liziane Lodea6007ERECHIM62130509londoneye6304F170", // Palácio de Westminster
-    passeio4: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406162.005802BR5913Liziane Lodea6007ERECHIM62210517abadiawestminster63042099", // Abadia de Westminster
-    passeio5: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406140.005802BR5913Liziane Lodea6007ERECHIM62180514pontedelondres6304F41C",  // Ponte de Londres
-    passeio6: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406216.005802BR5913Liziane Lodea6007ERECHIM62180514torredelondres6304DADC", // Torre de Londres
-    passeio7: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406170.005802BR5913Liziane Lodea6007ERECHIM62230519palaciodekensington630484C3", // Palácio de Kensington
-    passeio8: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406180.005802BR5913Liziane Lodea6007ERECHIM62170513casaannefrank6304A572", // Casa de Anne Frank
-    passeio9: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406198.005802BR5913Liziane Lodea6007ERECHIM62160512museuvangogh6304CB22", // Museu Van Gogh
-    passeio10: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406175.005802BR5913Liziane Lodea6007ERECHIM62120508heineken6304C1B1", // Heineken Experience
-    passeio11: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406265.005802BR5913Liziane Lodea6007Erechim62220518grandplacebruxelas63046F3E",// Grand Place de Bruxelas
-    passeio12: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406370.005802BR5913Liziane Lodea6007Erechim62150511torreeiffel6304D882",// Torre Eiffel
-    passeio13: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406170.005802BR5913Liziane Lodea6007Erechim62180514parquebruxelas6304035D",// Parque de Bruxelas
-    passeio14: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406192.005802BR5913Liziane Lodea6007Erechim62170513museudolouvre63046A2D",// Museu do Louvre
-    passeio15: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406151.005802BR5913Liziane Lodea6007Erechim62220518palaciodeversalhes630400B6",// Palácio de Versalhes
-    passeio16: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406122.005802BR5913Liziane Lodea6007Erechim62110507riosena63047175",// Rio Sena
+    // passeio1: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406210.005802BR5913Liziane Lodea6007ERECHIM62100506BigBen6304B909", // Big Ben
+    // passeio2: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406220.005802BR5913Liziane Lodea6007ERECHIM62130509londoneye63040B2E", // London Eye
+    // passeio3: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406150.005802BR5913Liziane Lodea6007ERECHIM62130509londoneye6304F170", // Palácio de Westminster
+    // passeio4: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406162.005802BR5913Liziane Lodea6007ERECHIM62210517abadiawestminster63042099", // Abadia de Westminster
+    // passeio5: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406140.005802BR5913Liziane Lodea6007ERECHIM62180514pontedelondres6304F41C",  // Ponte de Londres
+    // passeio6: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406216.005802BR5913Liziane Lodea6007ERECHIM62180514torredelondres6304DADC", // Torre de Londres
+    // passeio7: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406170.005802BR5913Liziane Lodea6007ERECHIM62230519palaciodekensington630484C3", // Palácio de Kensington
+    // passeio8: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406180.005802BR5913Liziane Lodea6007ERECHIM62170513casaannefrank6304A572", // Casa de Anne Frank
+    // passeio9: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406198.005802BR5913Liziane Lodea6007ERECHIM62160512museuvangogh6304CB22", // Museu Van Gogh
+    // passeio10: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406175.005802BR5913Liziane Lodea6007ERECHIM62120508heineken6304C1B1", // Heineken Experience
+    // passeio11: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406265.005802BR5913Liziane Lodea6007Erechim62220518grandplacebruxelas63046F3E",// Grand Place de Bruxelas
+    // passeio12: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406370.005802BR5913Liziane Lodea6007Erechim62150511torreeiffel6304D882",// Torre Eiffel
+    // passeio14: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406192.005802BR5913Liziane Lodea6007Erechim62170513museudolouvre63046A2D",// Museu do Louvre
+    // passeio15: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406151.005802BR5913Liziane Lodea6007Erechim62220518palaciodeversalhes630400B6",// Palácio de Versalhes
+    // passeio16: "00020126360014BR.GOV.BCB.PIX0114+55549964448415204000053039865406122.005802BR5913Liziane Lodea6007Erechim62110507riosena63047175",// Rio Sena
   };
 
   // Gera os QR Codes para todos os passeios
@@ -61,63 +60,64 @@ if (!ref || !onValue || !set || !database) {
   // Nomes formatados dos passeios
 // Nomes formatados dos passeios
   const nomesFormatados = {
-    bigben: "Big Ben",
-    londoneye: "London Eye",
-    palaciowestminster: "Palácio de Westminster",
-    abadiawestminster: "Abadia de Westminster",
-    pontelondres: "Ponte de Londres",
-    palaciofortaleza: "Palácio e Fortaleza Real da Torre de Londres",
-    palaciokensington: "Palácio de Kensington",
-    casaannefrank: "Casa de Anne Frank",
-    museuvangogh: "Museu Van Gogh",
+    bigben: "Visitação ao Palácio de Westminster e Big Ben",
+    londoneye: "Passeio na London Eye",
+    abadiawestminster: "Visitação na Abadia de Westminster",
+    palaciofortaleza: "Tour pela Torre de Londres e joias da coroa.",
+    casaannefrank: "Visitação à Casa de Anne Frank",
+    museuvangogh: "Visitação ao Museu Van Gogh",
     heinekenexp: "Heineken Experience",
-    grandplacebruxelas: "Grand Place de Bruxelas",
-    torreeiffel: "Torre Eiffel",
-    parquebruxelas: "Parque de Bruxelas",
-    louvre: "Museu do Louvre",
-    palacioversalhes: "Palácio de Versalhes",
-    riosena: "Rio Sena",
+    torreeiffel: "Um piquenique no jardim da Torre Eiffel",
+    louvre: "Visitação ao Museu do Louvre",
+    palacioversalhes: "Visitação ao Palácio e Jardim de Versalhes",
+    riosena: "Cruzeiro noturno com aperitivos no Bateaux Mouches pelo Rio Sena",
+    chaingles: "Um chá da tarde inglês",
+    passeiobarcoamsterdam: "Passeio de barco com degustação de queijos e vinhos pelos canais de Amsterdam",
+    excursaoganteeantuerpia: "Excursão guiada por Gante e Antuérpia",
+    happyhour: "Happy Hour no Delirium Bar",
+    cafeparis: "Cafezinho nas ruas de Paris.",
     };
 
   // Descrições dos passeios
 // Descrições dos passeios
 const descricoesPasseios = {
-  bigben: "Big Ben é o nome do sino mais famoso do mundo e da torre que o abriga, no Palácio de Westminster, em Londres. O Big Ben é um grande sino instalado na torre noroeste sede do Parlamento Britânico, localizado em Londres, no Reino Unido.",
-  londoneye: "A London Eye, 'Olho de Londres', também conhecida como Millennium Wheel, é uma roda-gigante de observação, com 135 metros de altura. Situada na cidade de Londres, da Inglaterra, foi inaugurada na passagem entre o dia 31 de dezembro de 1999 e 1 de janeiro de 2000 e é um dos pontos turísticos mais disputados da cidade.",
-  palaciowestminster: "O Palácio de Westminster, também conhecido como Casas do Parlamento, é o palácio londrino onde estão instaladas as duas Câmaras do Parlamento do Reino Unido. O palácio fica situado na margem Norte do rio Tâmisa, no Borough da Cidade de Westminster próximo de outros edifícios governamentais ao longo da Whitehall.",
-  abadiawestminster: "A Abadia de Westminster, formalmente denominada Igreja Colegiada de São Pedro em Westminster, é uma grande igreja em arquitetura predominantemente gótica na cidade de Westminster, Londres, Inglaterra, a oeste do Palácio de Westminster.",
-  pontelondres: "A Ponte da Torre de Londres, Tower Bridge ou simplesmente Ponte da Torre, é uma ponte-báscula construída sobre o rio Tâmisa, na cidade de Londres, capital do Reino Unido. A ponte foi construída entre 1886 e 1894, projetada por Horace Jones, John Wolfe Barry e Henry Marc Brunel.",
-  palaciofortaleza: "O Palácio e Fortaleza Real de Sua Majestade da Torre de Londres é um castelo histórico localizado na cidade de Londres, Inglaterra, Reino Unido, na margem norte do rio Tâmisa. Foi fundado por volta do final do ano de 1066 depois da conquista normanda da Inglaterra.",
-  palaciokensington: "O Palácio de Kensington é uma residência real situada em Kensington Gardens, no Royal Borough de Kensington e Chelsea, em Londres, Inglaterra. Tem sido utilizado pela Família Real Britânica desde o século XVII.",
-  casaannefrank: "A Casa de Anne Frank é um museu biográfico localizado na cidade de Amesterdã, capital dos Países Baixos.",
-  museuvangogh: "O Museu Van Gogh é um museu de arte localizado no município de Amsterdã, na província de Holanda do Norte nos Países Baixos. O museu é responsável pela preservação, conservação e difusão da obra do pintor holandês Vincent van Gogh.",
-  heinekenexp: "Heineken Experience - Tour interativo pela história da grande empresa cervejeira em uma antiga fábrica com degustação no final.",
-  grandplacebruxelas: "A Grand-Place de Bruxelas é a praça central de Bruxelas. Nela ficam a Câmara Municipal e a Casa do Rei. Alguns autores, entre os quais Victor Hugo, consideram-na a mais bela praça do mundo. Passeio com guia local.",
-  torreeiffel: "A Torre Eiffel é uma torre treliçada de ferro forjado no Champ de Mars, em Paris, França. Tem o nome do engenheiro Gustave Eiffel, cuja empresa projetou e construiu a torre de 1887 a 1889. Passeio com degustação. ",
-  parquebruxelas: "Também conhecido como Parque Real, o Parque de Bruxelas é o Parque de Bruxelas! Antigo refúgio de caça da realeza, é para lá que vão muitos dos habitantes quando querem relaxar e espairecer. Nos finais de semana fica lotado, pois muitos o procuram para praticar esportes, descansar, conversar e beber cerveja. Passeio com piquenique. ",
-  louvre: "Louvre ou Museu do Louvre é o maior museu de arte do mundo e um monumento histórico em Paris, França. Um marco central da cidade, está localizado na margem direita do rio Sena, no 1º arrondissement da cidade.",
-  palacioversalhes: "Palácio de Versalhes é um castelo real localizado na cidade de Versalhes, uma aldeia rural à época de sua construção, mas atualmente um subúrbio de Paris.",
-  riosena: "O Rio Sena corta o coração da cidade de Paris e passa em meio a alguns dos mais populares pontos turísticos da capital francesa, entre eles a Torre Eiffel, o Museu do Louvre, o Museu d'Orsay e a Catedral de Notre-Dame",
+  bigben: "Visitação ao Palácio de Westminster e Big Ben, o palácio é a sede do governo britânico e tem instalado na torre noroeste o sino mais famoso do mundo, conhecido como Big Ben. ",
+  londoneye: "Passeio na London Eye, 'Olho de Londres', é uma roda-gigante de observação que oferece vistas panorâmicas da cidade de Londres, com 135 metros de altura. É um dos pontos turísticos mais disputados da cidade.",
+  abadiawestminster: "Visitação na Abadia de Westminster é uma grande igreja em arquitetura predominantemente gótica na cidade de Westminster, Londres, Inglaterra. É um dos edifícios religiosos mais notáveis do Reino Unido e o local tradicional de coroação e sepultamento dos monarcas ingleses.",
+  palaciofortaleza: "Tour pela Torre de Londres e joias da coroa. O palácio e fortaleza real de Sua Majestade é um castelo histórico localizado na margem norte do rio Tâmisa. Foi fundado por volta do final do ano de 1066 depois da conquista normanda da Inglaterra.",
+  casaannefrank: "Visitação à Casa de Anne Frank um museu biográfico localizado na cidade de Amsterdam. Anne Frank foi uma jovem judia alemã, vítima do Holocausto, que ficou conhecida mundialmente após a publicação póstuma de seu diário em 1947. ",
+  museuvangogh: "Visitação ao Museu Van Gogh um museu de arte localizado no município de Amsterdam, na província de Holanda do Norte nos Países Baixos. O museu é responsável pela preservação, conservação e difusão da obra do pintor holandês Vincent van Gogh.",
+  heinekenexp: "Heineken Experience - Um tour interativo que leva você pela história da renomada marca de cerveja, na sua fábrica mais antiga, localizada no coração de Amsterdã. Ao final do passeio, aproveite uma degustação de cerveja no topo da fábrica, em um terraço com uma vista deslumbrante da cidade.",
+  torreeiffel: "Um piquenique no jardim da Torre Eiffel é uma experiência única, onde a magia de um dos monumentos mais emblemáticos do mundo se encontra com a tranquilidade do momento tendo a imponente Torre Eiffel como pano de fundo, é um cenário perfeito para relaxar e viver Paris de uma maneira íntima.",
+  louvre: "Visitação ao Museu do Louvre é o maior museu de arte do mundo um dos museus mais famosos e visitados do mundo, localizado em Paris, na França. Hoje abriga uma vasta coleção que abrange milhares de anos de história, desde a civilização antiga até a arte contemporânea. ",
+  palacioversalhes: "Visitação ao Palácio e Jardim de Versalhes é um dos mais magníficos e emblemáticos complexos arquitetônicos e paisagísticos da França. Os jardins de Versalhes são uma obra de arte por si só. Os jardins seguem o estilo clássico francês, com uma geometria perfeita, fontes, canais e grandes alamedas que se estendem por mais de 800 hectares.",
+  riosena: "Cruzeiro noturno com aperitivos no Bateaux Mouches pelo Rio Sena que corta o coração da cidade de Paris e passa em meio a alguns dos mais populares pontos turísticos da capital francesa, entre eles a Torre Eiffel, o Museu do Louvre, o Museu d'Orsay e a Catedral de Notre-Dame.",
+  chaingles: "Um chá da tarde inglês, o chá tradicional inglês é mais do que apenas uma bebida, é uma verdadeira instituição na cultura britânica. Tradicionalmente, o chá é servido entre as 15h e as 17h, acompanhado de uma seleção de sanduíches finos (geralmente de pepino, salmão defumado ou ovos e cress), scones com geleia e creme de leite, bolos e biscoitos.",
+  passeiobarcoamsterdam: "Passeio de barco com degustação de queijos e vinhos pelos canais de Amsterdam, que é famosa por seus belos canais que cortam a cidade, proporcionando uma vista deslumbrante de suas históricas casas e pontes encantadoras.",
+  excursaoganteeantuerpia: "Excursão guiada por Gante e Antuérpia, duas das mais belas cidades da Bélgica, num dia. Distinguem-se pelos canais, pelas ruas de paralelepípedos e pelas construções medievais.",
+  happyhour: "Happy Hour no Delirium Bar, localizado perto da Grand Place de Bruxelas, é famoso por sua vasta seleção de mais de 2.000 tipos de cervejas de diferentes partes do mundo, incluindo muitas opções belgas. É um ótimo lugar para degustar uma variedade de cervejas.",
+  cafeparis: "Cafezinho nas ruas de Paris. Nada mais chique do que tomar um café nas ruas de Paris. A cena é quase cinematográfica: você se senta em uma das charmosas mesinhas de ferro forjado de um café parisiense, com uma xícara fumegante de café espresso ou um capuccino perfeitamente preparado à sua frente.",
+
 };
 
 // URLs das imagens dos passeios
 const imagensPasseios = {
-  bigben: "https://static.historiadomundo.com.br/conteudo/images/o-famoso-sino-big-ben-foi-construido-no-seculo-xix-instalado-na-torre-relogio-em-londres-546cca5e27f55.jpg",
-  londoneye: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/London-Eye-2009.JPG/800px-London-Eye-2009.JPG",
-  palaciowestminster: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Sala_Westminster%2C_Palacio_de_Westminster%2C_Londres%2C_Inglaterra%2C_2014-08-07%2C_DD_015.JPG",
-  abadiawestminster: "https://londontickets.tours/wp-content/uploads/2023/01/westminster-abbey.jpg",
-  pontelondres: "https://i0.wp.com/gsilvosatrekpix.com/wp-content/uploads/2024/11/Girl-Dophin-Tower-Bridge-648.jpg?w=648&ssl=1",
+  bigben: "images/palacioWestminsterEBigBen.png",
+  londoneye: "images/londonEye.png",
+  abadiawestminster: "images/abadiaDeWestminster.png",
   palaciofortaleza: "https://res.klook.com/image/upload/c_fill,w_750,h_563/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/jxf7zt9gnjou6unklfhd.jpg",
-  palaciokensington: "https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_3:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/london/604?_a=BAVAZGDX0",
-  casaannefrank: "https://dicasdeamsterda.com.br/wp-content/uploads/sites/6/2016/04/annef-e1572036128309.jpg",
-  museuvangogh: "https://images.adsttc.com/media/images/55e6/f619/e58e/ce03/1300/0374/large_jpg/PORTADA_06_VanGoghMuseum_EntranceBuilding_HansvanHeeswijkArchitects_photo_RonaldTilleman.jpg?1441199623",
-  heinekenexp: "https://cdn.thatch.co/cdn-cgi/image/width=3840,format=webp/images/104109/6ga2u9.png",
-  grandplacebruxelas: "https://viajantesemfim.com.br/wp-content/uploads/2019/12/76647936_2581328741986880_620154867649871872_o.jpg",
-  torreeiffel: "https://cdn-imgix.headout.com/media/images/c90f7eb7a5825e6f5e57a5a62d05399c-25058-BestofParis-EiffelTower-Cruise-Louvre-002.jpg?auto=format&w=1051.2&h=540&q=90&fit=fit",
-  parquebruxelas: "https://dicaseuropa.com.br/wp-content/uploads/2014/01/parque-cinquentenario-bruxelas.jpg",
-  louvre: "https://www.simplesmenteparis.com/wp-content/uploads/2019/04/louvre-museum-1200x675.jpg",
-  palacioversalhes: "https://images.adsttc.com/media/images/6176/f430/f91c/81be/2200/000c/medium_jpg/jeremy-bezanger-pb-xtneJAAk-unsplash.jpg?1635185691",
-  riosena: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Pont_au_Change_and_Palais_de_justice%2C_Paris_20_April_2021_001.jpg/480px-Pont_au_Change_and_Palais_de_justice%2C_Paris_20_April_2021_001.jpg",
+  casaannefrank: "images/casaAnneFrank.png",
+  museuvangogh: "images/museuVanGogh.png",
+  heinekenexp: "images/heinekenExp.png",
+  torreeiffel: "images/torreEiffel.png",
+  louvre: "images/museuLouvre.png",
+  palacioversalhes: "images/palacioVersalhes.png",
+  riosena: "images/CruzeiroRioSena.png",
+  chaingles: "images/chaIngles.png",
+  passeiobarcoamsterdam: "images/passeioBarcoAmsterdam.jpg",
+  excursaoganteeantuerpia: "images/excursaoGanteEAntuerpia.png",
+  happyhour: "images/happyHourDeliriumBar.jpg",
+  cafeparis: "images/cafeParis.png",
 };
 
   // Carrega os passeios do Firebase
@@ -166,42 +166,34 @@ onValue(passeiosRef, (snapshot) => {
 
     console.log("Passeio:", id, nomePasseio, dadosPasseio);
 
-    // Define valores padrão para statusRondon e statusLiziane se não existirem
+    // Define valores padrão para statusRondon  se não existirem
     const statusRondon = dadosPasseio.statusRondon || "disponivel";
-    const statusLiziane = dadosPasseio.statusLiziane || "disponivel";
 
     // Log para verificar os valores de status
     console.log(`Status Rondon para ${nomePasseio}:`, statusRondon);
-    console.log(`Status Liziane para ${nomePasseio}:`, statusLiziane);
 
     const div = document.createElement('div');
     div.classList.add('passeio');
 
     // Verifica se ambos os status são "pago" para aplicar a classe "pago"
     const isRondonPago = typeof statusRondon === 'string' && statusRondon.toLowerCase() === 'pago';
-    const isLizianePago = typeof statusLiziane === 'string' && statusLiziane.toLowerCase() === 'pago';
-    if (isRondonPago && isLizianePago) {
+    if (isRondonPago) {
       div.classList.add('pago');
     }
 
     // Define as classes dos status com base nos valores
     const statusRondonClass = isRondonPago ? 'status-pago' : 'status-disponivel';
-    const statusLizianeClass = isLizianePago ? 'status-pago' : 'status-disponivel';
 
     div.innerHTML = `
     <h3>${nomeFormatado}</h3>
     <img src="${imagem}" alt="${nomeFormatado}" class="passeio-imagem">
     <p>${descricao}</p>
     <p>Valor: R$ ${valor.toFixed(2)}</p>
-    <p class="status ${statusRondonClass}">Status Rondon: ${statusRondon}</p>
+    <p class="status ${statusRondonClass}">Status para pagamento: ${statusRondon}</p>
     <button class="pagar-passeio" data-id="${id}" data-pessoa="Rondon" ${isRondonPago ? 'disabled' : ''}>
-      Comprar Passeio para o Rondon
+      Comprar Passeio para o Casal
     </button>
-    <p class="status ${statusLizianeClass}">Status Liziane: ${statusLiziane}</p>
-    <button class="pagar-passeio" data-id="${id}" data-pessoa="Liziane" ${isLizianePago ? 'disabled' : ''}>
-      Comprar Passeio para Liziane
-    </button>
-  `;
+    `;
     lista.appendChild(div);
   }
 
@@ -251,15 +243,14 @@ function selecionarPasseio(id, pessoa) {
     const imagem = imagensPasseios[nomePasseioNormalizado] || "https://via.placeholder.com/150";
     const valor = dadosPasseio.valor != null ? Number(dadosPasseio.valor) : 0;
 
-    // Define valores padrão para statusRondon e statusLiziane se não existirem
+    // Define valores padrão para statusRondon se não existirem
     const statusRondon = dadosPasseio.statusRondon || "disponivel";
-    const statusLiziane = dadosPasseio.statusLiziane || "disponivel";
 
     // Log para depuração
     console.log(`Passeio ${id} (${nomeFormatado}) para ${pessoa}:`, dadosPasseio);
 
     // Normaliza o status da pessoa selecionada
-    const statusKey = `status${pessoa}`; // "statusRondon" ou "statusLiziane"
+    const statusKey = `status${pessoa}`; // "statusRondon" 
     const statusNormalizado = (dadosPasseio[statusKey] || "disponivel")
       .toLowerCase()
       .normalize('NFD')
@@ -287,7 +278,6 @@ function selecionarPasseio(id, pessoa) {
         const updatedData = {
           valor: dadosPasseio.valor,
           statusRondon: statusRondon,
-          statusLiziane: statusLiziane
         };
         updatedData[statusKey] = "pago"; // Atualiza apenas o status da pessoa selecionada
 
