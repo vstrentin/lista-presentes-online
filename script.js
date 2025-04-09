@@ -261,7 +261,7 @@ function selecionarPasseio(id, pessoa) {
 
     if (statusNormalizado === 'disponivel') {
       // Preenche o modal com as informações
-      modalTitle.textContent = `Pagar ${nomeFormatado} para ${pessoa}`;
+      modalTitle.textContent = `Pagar ${nomeFormatado} para o Casal`;
       modalValue.textContent = `Valor: R$ ${valor.toFixed(2)} (insira este valor no app do banco)`;
       modalPixKey.textContent = pixKey;
 
