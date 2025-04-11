@@ -54,12 +54,6 @@ button:disabled {
   text-decoration: none;
 }
 
-#modal-qr-code {
-  max-width: 200px;
-  margin-top: 10px;
-  margin-bottom: 20px; /* Espaço abaixo do QR Code */
-}
-
 /* Estiliza a imagem na lista de passeios */
 .passeio-imagem {
   width: 50%;
@@ -302,4 +296,17 @@ button:disabled {
 .confirmar-pagamento:disabled {
   background-color: #6c757d;
   cursor: not-allowed;
+}
+
+#modal-qr-code {
+  max-width: 200px; /* Define uma largura máxima para o QR Code */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: end; /* Centraliza a imagem */
+}
+
+#modal-qr-code img {
+  width: 100%; /* A imagem ocupa no máximo a largura do container */
+  height: auto; /* Mantém a proporção */
 }
